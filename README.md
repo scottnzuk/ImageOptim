@@ -16,3 +16,18 @@ Requires:
 ```sh
 git clone --recursive https://imageoptim.com ImageOptim
 cd ImageOptim
+```
+
+To get started, open `imageoptim/ImageOptim.xcodeproj`. It will automatically download and build all subprojects when run in Xcode.
+
+In case of build errors, these sometimes help:
+
+```sh
+git submodule update --init
+```
+
+```sh
+cd gifsicle # or pngquant
+make clean
+make
+```
